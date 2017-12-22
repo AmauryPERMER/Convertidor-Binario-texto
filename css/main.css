@@ -1,0 +1,109 @@
+/*--------------------------------ASSETS--------------------------------*/
+@font-face
+{
+    font-family: 'text';
+    src: url('fonts/tt0246m_.ttf');
+}
+
+@font-face
+{
+    font-family: 'title';
+    src: url('fonts/tt0247m_.ttf');
+}
+/*------------------------------ASSETS END------------------------------*/
+
+
+body
+{
+    background-color: #2196F3;
+}
+
+
+/*----------------------------FORM CONTAINER----------------------------*/
+.container
+{
+    max-width: 700px;
+    min-width: 350px;
+    margin: 3em auto;
+}
+
+.container h1
+{
+    margin-bottom: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+    color: #fff;
+    
+    font-family: 'title', impact;
+    font-size: 2em;
+}
+
+.container p
+{
+    margin-bottom: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+    color: #fff;
+    text-align: justify;
+    font-family: 'text', sans-serif;
+}
+/*--------------------------FORM CONTAINER END--------------------------*/
+
+
+/*---------------------------------FORM---------------------------------*/
+
+
+/*---------------------------------FORM---------------------------------*/
+form textarea
+{
+    width: 100%;
+    min-height: 150px;
+    max-width: 700px;
+    margin-bottom: .5em;
+    padding: .5em;
+    
+    background: #fff;
+    color: #666;
+    
+    font-family: 'text', sans-serif;
+    
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+form textarea:focus
+{
+    border: 1px solid #999;
+}
+
+form a
+{
+    float: left;
+    
+    margin-right: .5em;;
+    margin-bottom: .5em;
+    padding: .5em;
+    
+    background: #8BC34A;
+    color: #fff;
+    
+    text-decoration: none;
+    font-family: 'text', sans-serif;
+    font-size: 1em;
+    
+    border: none;
+    border-radius: 2px;
+    
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+form a:hover
+{
+    background: #9CD46B;
+    cursor: pointer;
+}
+/*-------------------------------FORM END-------------------------------*/

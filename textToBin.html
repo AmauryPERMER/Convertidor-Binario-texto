@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        
+        <script type="text/javascript" src="js/TextToBin.js"></script>
+        
+        <title>Convertidor Texto a Binario</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Convertidor Texto a Binario</h1>
+            <p>
+                Para convertir tu texto a binario solo ingresa el texto en el cuadro de texto de abajo y oprime el boton "Convertir".
+            </p>
+
+            <form name="conversorForm">
+                <textarea name="Binary" id="BinText" onkeyup="convertBin()" placeholder="Texto"></textarea>
+                <a href="#" onclick="convertBin()">Convertir</a>
+                <a href="index.html" title="intercambiar"><img src="images/swap.svg" width="20px"></a>
+                <a href="#" id="copiar" onclick="CopyOutput()">Copiar</a>
+                <textarea name="Text" id="textText" placeholder="Codigo binario"></textarea>
+            </form>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        function convertBin()
+        {            
+            //obtiene el texto del "textarea" superior
+            var binary = document.getElementById("BinText").value;
+            //convierte el texto a binario
+            var converted = convertBinToText(binary);
+            //muestra el codigo binario en el "textarea" inferior
+            document.getElementById("textText").value = converted;
+        }
+        
+        function CopyOutput()
+        {
+            var copied = document.getElementById("textText");
+            copied.select();
+            document.execCommand("Copy");
+            alert("Texto copiado: ");
+        }
+    </script>
+    
+</html>
